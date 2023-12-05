@@ -58,9 +58,7 @@ export const App = () => {
   };
 
   const deleteContact = deleteId => {
-    setContacts(prevState =>
-      prevState.contacts.filter(item => item.id !== deleteId)
-    );
+    setContacts(prevState => prevState.filter(item => item.id !== deleteId));
   };
 
   return (
